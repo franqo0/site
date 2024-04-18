@@ -1,0 +1,613 @@
+html {
+    overflow-x: hidden;
+    background-color: #000000 !important;
+}
+
+h4 {
+    font-size: 27pt;
+}
+
+:root {
+    --fontSize: 16pt;
+}
+
+/*navbar*/
+:root {
+    --widthMenu: 45vw;
+}
+
+#menu-list {
+    position: fixed;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 8vh;
+    width: var(--widthMenu);
+    top: 2vw;
+    left: calc((100vw - var(--widthMenu)) / 2);
+    z-index: 200;
+    border-radius: 50vh;
+    }
+
+.menu-list-back {
+    backdrop-filter: blur(15px);
+    z-index: 199 !important;
+}
+
+.menu-list.hidden {
+    opacity: 0;
+}
+
+
+.naming {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 25%;
+    height: auto;
+    margin: 0;
+}
+
+.naming img {
+    align-items: center;
+    height: auto;
+    width: 60%;
+    transition: all 0.2s ease;
+}
+
+.naming img:hover {
+    width: 58%;
+    opacity: 0.3;
+}
+
+
+
+.menu-link a {
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.menu-link a:hover {
+    font-size: 15pt;
+    opacity: 0.3;
+}
+
+
+.menu-link {
+    font-size: 16pt;
+    font-weight: 500;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: -5%;
+    width: 70%;
+    padding: 25px;
+}
+
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: all 0.2s ease;
+}
+
+.nav.visible {
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+
+::-webkit-scrollbar {
+    width: 5px; 
+    background: transparent;
+}
+::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+::-webkit-resizer {
+    background: transparent; 
+}
+
+
+/*index-es*/
+:root {
+    --width: 90vw;
+}
+
+.index_es {
+    position: absolute;
+    height: 820vh; /* *******tamaño de la web**********/
+    border: 0px solid aqua;
+    width: var(--width);
+    top: auto;
+    left: calc((100vw - var(--width)) / 2);
+    overflow: hidden;
+}
+
+/*home*/
+.home {
+    position: relative;
+
+    font-size: 27pt;
+    line-height: 30pt;
+}
+
+#cube-1 {
+
+    position: absolute;
+    top: 0;
+    margin: 0;
+    left: 0;
+    height: 500px;
+    width: 40%;
+    z-index: 1;  
+    mix-blend-mode: normal;
+}
+
+#cube-2 {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0; 
+    height: 40%;
+    width: 25%;
+    z-index: 101;
+}
+
+.logotipo img {
+    position: absolute;
+    top: 10vh;
+    right: 5vw;
+    height:auto;
+    width: 10%;
+}
+
+.franqo {
+    position: absolute;
+    top: -12vh;
+    left: 0vw;
+    z-index: 100;
+    transition: opacity 0.1s ease;
+}
+
+.franqo img {
+    height: auto;
+    width: 50vw;
+    
+}
+
+.franqo.hidden {
+    opacity: 0;
+}
+
+.text {
+    position: absolute;
+    top: 45vh;
+    right: 5vw;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.text a {
+    text-decoration: none;
+    color: #000000;
+    background-color: #ffffff;
+    font-weight: 900;
+    line-height: 27pt;
+    padding: 5pt;
+    display: inline-block;
+    height: auto; 
+    margin-top: 5px;
+}
+
+/*i'am*/
+#i-am {
+    position: relative;
+    display: --;
+    top: 100vh;
+    width: auto;
+    z-index: 200;
+
+}
+
+#i-am h4 {
+    position: relative;
+    display: block;
+    color: #000000;
+    background-color: #ffffff;
+    top: 30vh;
+    left: 5vw;
+    width: 20%;
+    height: 5%;
+    text-align: center;
+}
+
+#i-am div {
+    height: auto;
+    width: 15vw;
+    position: relative;
+    justify-content: space-between;
+    display: block;
+}
+
+#i-am a {
+    position: relative;
+    display: block;
+    margin: 8px;
+    font-size: 18pt;
+    top: 34vh;
+    left: calc(10vw - 8px);
+    transition: all 0.2s ease;
+
+}
+
+#i-am a:hover {
+    font-size: 17pt;
+    opacity: 0.3;
+}
+
+/*ilustrador*/
+
+#illustrator {
+    position: relative;
+    height: auto;
+    width: 90%;
+    top: 210vh;
+    left: 5vw;
+    border: 0px solid greenyellow;
+}
+
+    #illustrator h4 {
+        position: relative;
+        text-align: center;
+        left: auto;
+        font-size: 27pt;
+        border: 0px solid greenyellow;
+    }
+
+    .justin {
+        position: relative;
+        display: flex;
+        top: 15vh;
+
+    }
+
+        .justin h5 {
+            position: absolute;
+            display: block;
+            border: 0px solid yellow;
+            height: auto;
+            width: auto;
+            top: 22vh;
+            right: 5vw;
+            font-size: 16pt;
+            background-color: #000000;
+            padding: 10px;
+
+        }
+
+        .justin p {
+            position: absolute;
+            display: block;
+            border: 0px solid yellow;
+            height: auto;
+            width: 40vw;
+            top: 30vh;
+            right: 5vw;
+            font-size: 16pt;
+
+        }
+
+
+        .justin__poster {
+            position: absolute;
+            border: 0px solid red;
+            display: flex;
+            justify-content: center;
+            height: 75vh;
+            width: auto;
+            left: 10vh;
+        }
+
+        .justin__poster image {
+            height: auto;
+            width: auto;
+            object-fit: contain;
+        }
+
+
+
+
+
+
+        .stranger-things {
+            position: relative;
+            display: flex;
+            top: 80vh;
+    
+        }
+    
+
+        .stranger-things h5 {
+            position: absolute;
+            display: block;
+            border: 0px solid yellow;
+            height: auto;
+            width: auto;
+            top: 22vh;
+            left: 5vw;
+            font-size: 16pt;
+            background-color: #000000;
+            padding: 10px;
+
+        }
+
+
+            .stranger-things p {
+                position: absolute;
+                display: block;
+                border: 0px solid yellow;
+                height: auto;
+                width: 40vw;
+                top: 30vh;
+                left: 5vw;
+                font-size: 16pt;
+    
+            }
+    
+    
+            .stranger-things__poster {
+                position: absolute;
+                border: 0px solid red;
+                display: flex;
+                justify-content: center;
+                height: 75vh;
+                width: auto;
+                right: 10vh;
+            }
+    
+            .stranger-things__poster image {
+                height: auto;
+                width: auto;
+                object-fit: contain;
+            }
+
+
+
+#blender {
+    position: relative;
+    height: 500px;
+    width: 90%;
+    top: 410vh;
+    left: 5vw;
+    border: 0px solid rgb(47, 206, 255);
+}
+
+    #blender h4 {
+        position: relative;
+        text-align: center;
+        left: auto;
+        font-size: 27pt;
+        border: 0px solid greenyellow;
+    }
+
+    #donofrio {
+    border: 0px solid red;
+    position: absolute;
+    top: 465vh;
+    margin: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 101;
+    }
+
+    .blender-container {
+        position: relative;
+        display: flex;
+        top: 70vh;
+
+    }
+
+    .blender-container h5 {
+        position: absolute;
+        display: block;
+        border: 0px solid yellow;
+        height: auto;
+        width: 15vw;
+        top: 22vh;
+        left: calc((100% - 15vw) / 2);
+        font-size: 16pt;
+        background-color: #000000;
+        text-align: center;
+        padding: 10px;
+
+    }
+
+
+        .blender-container p {
+            position: absolute;
+            display: block;
+            border: 0px solid yellow;
+            height: auto;
+            width: 30vw;
+            top: 30vh;
+            left: calc((100% - 30vw) / 2);
+            font-size: 16pt;
+            text-align: center;
+
+        }
+
+
+
+        .blender-container {
+        position: relative;
+        display: flex;
+        top: 70vh;
+
+    }
+
+    .blender-container h5 {
+        position: absolute;
+        display: block;
+        border: 0px solid yellow;
+        height: auto;
+        width: 15vw;
+        top: -60vh;
+        left: calc((100% - 15vw) / 2);
+        font-size: 16pt;
+        background-color: #000000;
+        text-align: center;
+        padding: 10px;
+
+    }
+
+
+        .blender-container p {
+            position: absolute;
+            display: block;
+            border: 0px solid yellow;
+            height: auto;
+            width: 30vw;
+            top: 30vh;
+            left: calc((100% - 30vw) / 2);
+            font-size: 16pt;
+            text-align: center;
+
+        }
+
+
+
+
+
+.blender__chefcito {
+        position: relative;
+        display: flex;
+        top: 110vh;
+
+    }
+
+    .blender__chefcito h5 {
+        position: absolute;
+        display: block;
+        border: 0px solid yellow;
+        height: auto;
+        width: 15vw;
+        top: 22vh;
+        left: calc((100% - 15vw) / 2);
+        font-size: 16pt;
+        background-color: #000000;
+        text-align: center;
+        padding: 10px;
+
+    }
+
+
+        .blender__chefcito p {
+            position: absolute;
+            display: block;
+            border: 0px solid yellow;
+            height: auto;
+            width: 30vw;
+            top: 70vh;
+            right: 8vw;
+            font-size: 16pt;
+            text-align: center;
+
+        }
+
+
+        #chefcito,
+        #chefcito_player {
+            border: 0px solid blue;
+            position: absolute;
+            top: 580vh;
+            margin: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 101;
+            }
+
+
+#contact-form {
+    font-size: 16pt;
+    position: relative;
+    top: 600vh;
+    border: 0px solid magenta;
+}
+
+#contact-form div {
+    text-align: center;
+    position: relative;
+}
+
+.now {
+    position: relative;
+    top: 40vh;
+}
+
+.ask {
+    position: relative;
+    top: 42vh;
+}
+
+.cta {
+    position: relative;
+    width: 10vw;
+    top: 55vh;
+    left: calc((90vw - 10vw) / 2);
+    background-color: #D1FF00;
+    color: #000000;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.contact-icon{
+    top: 10vw;
+    left: calc(82vw / 2);
+    height: auto;
+    width: 8vw;
+}
+
+.cta:hover {
+    width: 9vw;
+    font-size: 15pt;
+    opacity: 0.8;
+    left: calc((90vw - 9vw) / 2);
+}
+
+.fotter {
+    height: 50vh;
+    width: 100%;
+    background-color: blueviolet;
+    color: #ffffff;
+}
+
+/*#poster-demogorgon {
+
+    border: 0px solid red;
+    position: absolute;
+    top: 290vh;
+    margin: 0;
+    left: 0;
+    height: auto%;
+    width: 100%;
+    z-index: 101;
+}

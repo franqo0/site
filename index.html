@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>franqo</title>
+    <link rel="icon" type="image/vnd.icon" href="icon.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/start.css">
+</head>
+<body>
+    <div class="background">
+
+        <svg xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
+                    <feBlend in="SourceGraphic" in2="goo" />
+                </filter>
+            </defs>
+        </svg>
+
+        <div class="visual-filters">
+            <div class="sphere-container">
+
+                <div class="sphere-container_a1"></div>
+                <div class="sphere-container_a2"></div>
+                <div class="sphere-container_a3"></div>
+                <div class="sphere-container_a4"></div>
+                <div class="sphere-container_a5"></div>
+                <div class="cursor"></div>
+                
+            </div>
+        </div>
+        <script src="js/main.js"></script>
+    </div>
+
+    <div class="language">
+        <div class="logotipo">
+            <img src="logotipo.svg"/>
+        </div>
+        <div class="selector">
+            <div class="text">Seleccionar Idioma</div>
+            <div class="language_selector">
+
+                <a href="index_ES.html" class="language_selector-es">
+                        <div>ES</div>
+                        <div><img src="svg/es_icon.svg"/></div>
+                </a>
+
+                <a href="index_EN.html" class="language_selector-en">
+                        <div>EN</div>
+                        <div><img src="svg/en_icon.svg"/></div>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

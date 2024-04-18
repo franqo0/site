@@ -1,0 +1,66 @@
+.language {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 50%;
+    left: 25%;
+}
+
+:root {
+    --logo-w: 25%;
+}
+
+.logotipo {
+    position: relative;
+    height: auto;
+    width: var(--logo-w);
+    top: 38%;
+    left: calc((100% - var(--logo-w)) / 2);
+
+}
+
+.selector {
+    position: relative;
+    font-size: 20px;
+    text-align: center;
+    top: 50%;
+}
+
+.selector img {
+    height: 20px;
+    width: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.language_selector {
+    margin: 1%;
+    display: flex;
+    justify-content: center;
+}
+
+.language_selector-en,
+.language_selector-es {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    width: 15%;
+    transition: all 0.2s ease;
+}
+
+.language_selector-en:hover,
+.language_selector-es:hover {
+    opacity: 0.5;
+    scale: 0.9;
+}
+
+.language_selector-en div,
+.language_selector-es div {
+    margin: 0% 5%;
+    justify-content: center;
+}
+

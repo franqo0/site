@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>franqo</title>
+    <link rel="icon" type="image/vnd.icon" href="icon.svg">
+
+    <!-- tipography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- style's css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/index_es.css">
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
+    <script type="module" src="js/3d/cube-1.js"></script> 
+    <script type="module" src="js/3d/cube-2.js"></script>
+    <script type="module" src="js/3d/donofrio.js"></script>
+    <script type="module" src="js/3d/chefcito.js"></script>
+    <script type="module" src="js/3d/chefcito_player.js"></script>
+    
+
+    
+</head>
+</head>
+<body>
+
+    <div class="background">
+
+        <svg xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
+                    <feBlend in="SourceGraphic" in2="goo" />
+                </filter>
+            </defs>
+        </svg>
+
+        <div class="visual-filters">
+            <div class="sphere-container">
+
+                <div class="sphere-container_a1"></div>
+                <div class="sphere-container_a2"></div>
+                <div class="sphere-container_a3"></div>
+                <div class="sphere-container_a4"></div>
+                <div class="sphere-container_a5"></div>
+                <div class="cursor"></div>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="index_es">
+
+
+        <div class="home" id="home">
+            <div class="logotipo">
+                <img src="logotipo.svg">
+            </div>
+            <div class="franqo" id="franqo">
+                <img src="img/franqo.gif">
+            </div>
+            <div class="text">
+                <p>Holaaa!</br>Mi nombre es Franco Torres y</br>mi curiosidad me lleva a ver las</br>cosas <i><b>desde otra perspectiva,</b></i></br>simplemente porque soy</p>
+                <a href="/menu/about-me.html">franqo</a>
+            </div>
+
+        </div>
+
+        <div id="i-am">
+            <h4>yo también soy</h4>
+            <div>
+                <a>ilustrador</a>
+                <a>modelador 3D</a>
+                <a>creador de marcas</a>
+                <a>un diseñador</a>
+            </div>
+        </div>
+
+        <div id="illustrator">
+            <h4>como ilustrador</h4>
+
+            <div class="justin">
+                <div class=" justin__poster">
+                    <img src="img/justint-poster.gif">
+                </div>
+                <h5>Justin Bieber World Tour</h5>
+                <p>Poster promocional del World Tour de Justin Bieber, ilustrado digitalmente para transmitir la esencia de su nuevo álbum y capturar la identidad única del artista.</p>
+            </div>
+
+            <div class="stranger-things">
+                <div class="stranger-things__poster">
+                    <img src="img/st-poster.gif">
+                </div>
+                <h5>Poster Stranger Things</h5>
+                <p>Infografía informativa que presenta datos básicos de las 4 temporadas de Stranger Things sin spoilers. Ideal para recordar o resumir la trama de la serie de manera concisa y atractiva.</p>
+            </div>
+
+        </div>
+
+        <div id="blender">
+            <h4>como modelador 3d</h4>
+            <div class="blender-container">
+                <h5>Empaque de helado</h5>
+                <p>Empaque de helado diseñado para evitar que las manos se ensucien cuando el helado se derrite.</p>
+            </div>
+
+            <div class="blender__chefcito">
+                <h5>Personajes de Juego</h5>
+                <p>Diseño de personajes para videojuego basado en el programa 'El Gran Chef'.</p>
+            </div>
+
+        </div>
+        <div id="brander"> </div>
+        <div id="designer"> </div>
+        <div id="contact-form">
+            <div>Como lo dije simplemente soy franqo
+                <div class="contact-icon"><img src="icon.svg"></div>
+            </div>
+
+            <div class="now">y ahora</div>
+            <div class="ask"><b>¿también quieres ver </br>desde otra perspectiva?</b></div>
+            <div class="cta">hagámoslo</div>
+        </div>
+
+    </div>
+
+
+    <div class="fotter">
+        <h6></h6>
+        <div class="follow">
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="nav" id="nav">
+        <div id="menu-list">
+
+            <a href="#" class="naming">
+                <img src="naming.svg">
+            </a>
+            <div class="menu-link">
+                <a href="#" id="Works">trabajos</a>
+                <a href="#" id="feedBack">comentarios</a>
+                <a href="menu/about-me.html" id="about-me">sobre mí</a>
+                <a href="#" id="contact">contácto</a>
+            </div>
+            
+        </div>
+        <div class="menu-list-back" id="menu-list"></div>
+    </div>
+
+    <div id="objects-3d">
+
+        <div id="cube-1"></div>
+        <div id="cube-2"></div>
+        <div id="donofrio"></div>
+        <div id="chefcito"></div>
+        <div id="chefcito_player"></div>
+
+    </div>    
+</body>
+</html>
+
